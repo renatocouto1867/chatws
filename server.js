@@ -9,6 +9,6 @@ const httpServer = require('http').createServer(app);
 app.use(express.static('public'));
 
 const PORT =8080
-httpServer.listen(PORT,()=> console.log('Servidor iniciado na porta ' + PORT));
 
 app.get('/',(req,res)=> res.sendFile(__dirname + '/index.html'));
+httpServer.listen(PORT,()=> console.log('Servidor iniciado na porta ' + PORT));
