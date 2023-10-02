@@ -13,27 +13,24 @@
         <Label for="msg">Digite sua mensagem</Label>
         <input type="text" id="msg">
 
-        <button type="submit">enviar</button>        
-
+        <button type="submit">enviar</button> 
+        
     </form>
+
+    <ul id="mensagens">
+
+    </ul>
+    <div id="status">
+
+    </div>       
+
 
 </body>
 
 <!-- inclui a biblioteca no lado do cliente -->
 <script src="/socket.io/socket.io.js"></script>
 
-<script>
-    window.addEventListener("load", ()=>{
-        const socket = io(); //
-        console.log('Conectado no servidor de websocket');
-
-        document.getElementById('form').addEventListener('submit',(evt)=>{
-            const msg = document.getElementById('msg').value;
-            socket.emit('chatmsg',msg)//cria um rotulo para a mensagem
-            console.log("Enviado Mensagem "+msg); // só para teste
-            evt.preventDefault();
-        })
-    })
+<script src="index.js">  
 
 </script>
 </html>
