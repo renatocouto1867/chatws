@@ -11,7 +11,6 @@ const serverSocket = require('socket.io')(httpServer);
 //diz a minha aplicação express para usar a pasta public como sendo pública
 app.use(express.static('public'));
 
-
 // posso inclusive cria um caminho virtual exemplo /paginas/ola
 //app.get('/**',(req,res)=> res.sendFile(__dirname + '/index.js')); so quando for direcionar a uma requisição diferente da raiz ** endereço
 app.get('/ola',(req,res)=> res.send("Ola Mundo"));
