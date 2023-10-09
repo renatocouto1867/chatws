@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat WS</title>
-</head>
-<body>
-    <h1>Chat WS</h1>
-    
-    <form id="form" action="">
-        
-        <Label for="msg">Digite sua mensagem</Label>
-        <input type="text" id="msg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat WS</title>
+    </head>
+    <body>
+        <h1>Chat WS</h1>
 
-        <button type="submit">enviar</button> 
-        
-    </form>
+        <form id="form" action>
 
-    <ul id="mensagens">
+            <label for="msg">Digite sua mensagem</label>
+            <input type="text" id="msg">
 
-    </ul>
-    <div id="status">
+            <button type="submit">enviar</button>
 
-    </div>       
+        </form>
 
+        <ul id="mensagens">
 
-</body>
+        </ul>
+        <div id="status">
 
-<!-- inclui a biblioteca no lado do cliente -->
-<script src="/socket.io/socket.io.js"></script>
+        </div>
 
-<script src="index.js">  
+    </body>
+
+    <!-- inclui a biblioteca no lado do cliente -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="index.js">  
 
 </script>
 </html>

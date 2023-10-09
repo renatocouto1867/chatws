@@ -27,5 +27,5 @@ window.addEventListener("load", () => {
     })
 
     socket.on('chatmsg', msg => document.getElementById('mensagens').innerHTML += `<li>${msg}</li>`)
-    socket.on('status', msg=> document.getElementById('status').innerHTML=msg)
+    socket.on('status', msg => document.getElementById('status').innerHTML = msg)
 })
