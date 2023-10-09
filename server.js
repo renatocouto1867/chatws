@@ -15,7 +15,8 @@ app.use(express.static('public'));
 //app.get('/**',(req,res)=> res.sendFile(__dirname + '/index.js')); so quando for direcionar a uma requisição diferente da raiz ** endereço
 app.get('/ola', (req, res) => res.send("Ola Mundo"));
 
-const PORT = 8080
+//const PORT = 8080 //porta fixa
+const PORT = process.env ['PORT']||8080;//Pega valor da variavel como valor da porta caso ela exista, senão atribui o valor 8080;
 
 serverSocket.on('connect', socket => {
 
