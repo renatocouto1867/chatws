@@ -2,7 +2,6 @@ window.addEventListener("load", () => {
     const socket = io(); //
     console.log('Conectado no servidor de websocket');
 
-
     document.getElementById('form').addEventListener('submit', (evt) => {
         const msg = document.getElementById('msg').value;
 
